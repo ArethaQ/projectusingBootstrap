@@ -6,23 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--Link para pegar o estilo CSS dos servidores qdo Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 
 <body>
-    <!-- Image and text -->
+
+  <div class="container-fluid m-0 p-0">
+<!-- Menu -->
 <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
       <img src="./assets/img/pizza.png" width="30" height="30" class="d-inline-block align-top" alt="">
       FoodLovers
     </a>
     <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link active" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Exemplo</a>
+          <a class="nav-link" href="#destaques">Destaques</a>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Receitas</a>
@@ -36,7 +39,6 @@
               <a class="dropdown-item" href="#">Doces e Sobremesas</a>
               <a class="dropdown-item" href="#">Saladas e Molhos</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
             </div>
           </li>
         <li class="nav-item">
@@ -55,9 +57,9 @@
     </form>
   </nav>
   </nav>
-
+<!--/Menu-->
     
-
+<div class="row mt-0 col-0 d-flex flex-wrap justify-content-around align-items-center">
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -95,21 +97,63 @@
       </div>
     </div>
   </div>
+</div>
+  
 
 
 
 
-  <h1>Usando Bootstrap</h1>
+<div class="row mt-4 d-flex flex-wrap justify-content-around align-items-center">
+  <h1 id="destaques">Destaques TOP 3 + Procurados 2022:</h1>
+</div>
+  
+
+<div class="row mt-4 d-flex flex-wrap justify-content-around align-items-center">
+
+  <div class="card" style="width: 18rem;">
+    <video src="assets/videos/Ratatouille de _Ratatouille_ _ Comida de Cinema.mp4" controls>Ratatouille</video>
+    <div class="card-body">
+      <h5 class="card-title">Ratatouille</h5>
+      <p class="card-text"> Ratatouille é um prato camponês francês e foi a estrela do filme Ratatouille, deliciosa animação da Pixar, de 2007!</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <video src="/assets/videos/Bolo de Chocolate de _Matilda_ _ Comida de Cinema.mp4" controls>Bolo de Chocolate</video>
+    <div class="card-body">
+      <h5 class="card-title">Bolo de Chocolate</h5>
+      <p class="card-text">Nada como um delicioso bolo de chocolate, com recheio de chocolate e cobertura de... CHOCOLATE! E tudo inspirado no filme Matilda (1996).</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <video src="/assets/videos/Coxinha de _Estômago_ _ Comida de Cinema.mp4" controls>Coxinha</video>
+    <div class="card-body">
+      <h5 class="card-title">Coxinha</h5>
+      <p class="card-text">A coxinha é basicamente o salgado mais popular e cultuado da culinária brasileira. Aprenda aqui a fazer uma receita inspirada no fantástico filme Estômago, de 2008!</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+  
+
+<hr>
+<div class="row mt-0 col-0 d-flex flex-wrap justify-content-around align-items-center">
+<footer>
+       <div class="align-items-center">
+       <p>
+        Criação e Desenvolvimento: Aretha Queiroz &copy 2022;  
+      </p>
+  </div>
+</footer>
+</div>
+    
+    
 
 
 
 
-
-
-
-
-
-
+<!--Scripts necessários para utilização dos códigos JS do Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -117,5 +161,10 @@
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
 </body>
+
+
+       
+        
+    
 
 </html>
